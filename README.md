@@ -2,7 +2,7 @@
 
 A desktop AI assistant for Linux/X11 that captures your screen and voice to answer your questions.
 
-This C program listens for a global keybinding (`Ctrl+Shift+L`). When activated, it:
+This C program listens for a global keybinding (`Ctrl+Shift+F12`). When activated, it:
 1.  Takes a screenshot of the entire desktop.
 2.  Records a 5-second audio clip from the default microphone.
 3.  Sends the screenshot to a vision language model (LLM) to get a description.
@@ -70,7 +70,7 @@ Ensure you have compatible OpenAI-style and Whisper servers running and accessib
 1.  Compile the program as described above.
 2.  Run the executable from your terminal: `./vision_agent`
 3.  The program will run in the foreground and print a confirmation that it has started.
-4.  Press `Ctrl+Shift+L` anywhere in your desktop session to trigger the agent.
+4.  Press `Ctrl+Shift+F12` anywhere in your desktop session to trigger the agent.
 5.  The agent will perform the capture, transcription, and analysis, then print the final result to the terminal where it was launched.
 
 Temporary screenshot (`.png`) and audio (`.wav`) files are created in `/dev/shm/` and are deleted immediately after use.
